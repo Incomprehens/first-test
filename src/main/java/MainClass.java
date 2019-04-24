@@ -1,18 +1,25 @@
 public class MainClass {
 
 
-    public static int getLocalNumber()
+    private int class_number=20;
+    public int getClassNumber(){
+
+        return this.class_number;
+    }
+
+
+    public  int getLocalNumber()
     {
         int number = 14;
         return number;
     }
 
-    public static void typeStartTest()
+    public  void typeStartTest()
     {
         System.out.println("Start Test");
     }
 
-    public static void typeFinishTest()
+    public  void typeFinishTest()
     {
         System.out.println("Finish Test");
     }
