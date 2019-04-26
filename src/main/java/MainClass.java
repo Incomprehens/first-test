@@ -16,7 +16,7 @@ public class MainClass {
 
     public String getClassString()
     {
-        String class_string = "hllo, world";
+        String class_string = "Hello, world";
         return class_string;
     }
 }
