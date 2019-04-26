@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainClassTest extends MainClass
 {
@@ -50,4 +53,18 @@ public class MainClassTest extends MainClass
         else  System.out.println("метод getLocalNumber не возвращает число 45 - мутод getClassNumber="+getClassNumber());
 
     }
+
+
+    @Test
+    public void testGetClassString()
+    {
+        Boolean a= getClassString().contains("Hello");
+        Boolean b= getClassString().contains("hello");
+
+        if (a==true || b==true) {System.out.println("Есть слово Hello или hello");}
+        else Assertions.fail("нет ни одной из подстрок Hello или hello - тест падает");
+    }
+
+
+
 }
