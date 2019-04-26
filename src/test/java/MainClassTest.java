@@ -1,13 +1,26 @@
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class MainClassTest extends MainClass
 {
 
+    @BeforeEach
+    public void typeStartTest()
+    {
+        System.out.println("Start Test");
+    }
+
+    @AfterEach
+    public void typeFinishText()
+    {
+        System.out.println("Finish Test");
+    }
 
     @Test
     public void testGetLocalNumber()
     {
-        typeStartTest();
+
 
         if (getLocalNumber()==14)
         {
@@ -16,7 +29,7 @@ public class MainClassTest extends MainClass
         }else  System.out.println("метод getLocalNumber не возвращает число 14 - метод getLocalNumber="+getLocalNumber());
 
 
-        typeFinishTest();
+
 
     }
 
@@ -27,7 +40,7 @@ public class MainClassTest extends MainClass
     public void testGetClassNumber()
     {
 
-        typeStartTest();
+
 
         if (getClassNumber()>45)
         {
@@ -35,6 +48,6 @@ public class MainClassTest extends MainClass
         }
 
         else  System.out.println("метод getLocalNumber не возвращает число 45 - мутод getClassNumber="+getClassNumber());
-        typeFinishTest();
+
     }
 }

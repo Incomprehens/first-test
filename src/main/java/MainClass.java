@@ -14,15 +14,6 @@ public class MainClass {
         return number;
     }
 
-    public  void typeStartTest()
-    {
-        System.out.println("Start Test");
-    }
-
-    public  void typeFinishTest()
-    {
-        System.out.println("Finish Test");
-    }
 
 
 }
