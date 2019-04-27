@@ -1,7 +1,7 @@
 public class MainClass {
 
 
-    private int class_number = 20;
+    private int class_number = 45;
 
     public int getClassNumber() {
 
