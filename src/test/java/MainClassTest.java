@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainClassTest extends MainClass {
 
@@ -51,7 +52,10 @@ public class MainClassTest extends MainClass {
     @Test
     public void testGetClassString()
     {
-        assertFalse(get);
+
+
+        assertTrue(getClassString().contains("hello") || getClassString().contains("Hello"));
+
 
         /*
         Boolean a = getClassString().contains("Hello");

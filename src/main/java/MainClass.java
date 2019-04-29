@@ -1,7 +1,7 @@
 public class MainClass {
 
 
-    private int class_number = 45;
+    private int class_number = 46;
 
     public int getClassNumber() {
 
@@ -16,7 +16,7 @@ public class MainClass {
 
     public String getClassString()
     {
-        String class_string = "Hello, world";
+        String class_string = "Hello world ";
         return class_string;
     }
 }
